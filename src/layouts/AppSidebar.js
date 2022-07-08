@@ -16,6 +16,7 @@ import SidebarSearch from "../components/SidebarSearch";
 import SearchIcon from "@mui/icons-material/Search";
 import MenuItem from "@mui/material/MenuItem";
 import { capitalize } from "../utilities/capitalize";
+import CustomMenuDropdown from "../components/CustomMenuDropdown";
 
 export const AppSidebar = (props) => {
   const resources = useResourceDefinitions();
@@ -59,6 +60,7 @@ export const AppSidebar = (props) => {
         primaryText='Miscellaneous'
         leftIcon={<LabelIcon />}
       />
+      <CustomMenuDropdown />
       <Logout />
     </Menu>
   );
