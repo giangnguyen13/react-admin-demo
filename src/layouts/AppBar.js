@@ -16,7 +16,8 @@ const MyAppBar = (props) => (
     />
     {/* <ToggleThemeButton lightTheme={defaultTheme} darkTheme={darkTheme} /> */}
     <Box flex='1'>
-      <Typography variant='h6' id='react-admin-title'></Typography>
+      {/* BUG: Title keeps display resource name */}
+      {/* <Typography variant='h6' id='react-admin-title'></Typography> */}
     </Box>
     <ToggleThemeButton lightTheme={defaultTheme} darkTheme={darkTheme} />
   </AppBar>
