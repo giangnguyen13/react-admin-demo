@@ -30,8 +30,8 @@ export const AppSidebar = (props) => {
           <SearchIcon />
         </MenuItem>
       )}
-
       <DashboardMenuItem />
+      <CustomMenuDropdown />
       {Object.keys(resources).map((name) => {
         const MemoComponent = resources[name].icon;
         const displayText =
@@ -60,7 +60,6 @@ export const AppSidebar = (props) => {
         primaryText='Miscellaneous'
         leftIcon={<LabelIcon />}
       />
-      <CustomMenuDropdown />
       <Logout />
     </Menu>
   );

@@ -12,10 +12,10 @@ import DefaultIcon from "@mui/icons-material/ViewList";
 import { ExpandLess, ExpandMore } from "@mui/icons-material";
 import { hasChildren } from "../utilities/hasChildren";
 
-import { menu } from "../data/menu";
+import { bmo_menu } from "../data/menu";
 
 const CustomMenuDropdown = () => {
-  return menu.map((item, key) => <MenuItem key={key} item={item} />);
+  return bmo_menu.map((item, key) => <MenuItem key={key} item={item} />);
 };
 
 const MenuItem = ({ item }) => {

@@ -12,87 +12,125 @@ import {
 
 import React from "react";
 
-export const menu = [
+export const bmo_menu = [
   {
     icon: <HomeOutlined />,
-    title: "Home",
-    items: [],
+    title: "Trade Workstation",
+    items: [
+      {
+        title: "Positions",
+        to: "/trade_workstation/positions",
+      },
+      {
+        title: "Trades",
+        to: "/trade_workstation/trades",
+      },
+      {
+        title: "Risks",
+        to: "/trade_workstation/risks",
+      },
+      {
+        title: "PnL",
+        to: "/trade_workstation/pnl",
+      },
+    ],
   },
   {
     icon: <LocalLibraryOutlined />,
-    title: "Education",
+    title: "Static Data",
     items: [
       {
-        title: "Technical Analysis",
+        title: "ECNs Account Mapping",
         items: [
           {
-            title: "The Dow Theory",
-            to: "/thedowtheory",
+            title: "Candeal",
+            to: "/static_data/ecn/candeal",
           },
           {
-            title: "Charts & Chart Patterns",
-            to: "/chart",
+            title: "Shorcan",
+            to: "/static_data/ecn/shorcan",
           },
           {
-            title: "Trend & Trend Lines",
-            to: "/trendlines",
-          },
-          {
-            title: "Support & Resistance",
-            to: "/sandr",
+            title: "TT",
+            to: "/static_data/ecn/tt",
           },
         ],
       },
       {
-        title: "Fundamental Analysis",
+        title: "References",
         items: [
-          {
-            title: "The Dow Theory",
-            to: "/thedowtheory",
-          },
-          {
-            title: "Charts & Chart Patterns",
-            to: "/chart",
-          },
-          {
-            title: "Trend & Trend Lines",
-            to: "/trendlines",
-          },
-          {
-            title: "Support & Resistance",
-            to: "/sandr",
-          },
+          { title: "Something 1", to: "#" },
+          { title: "Something 2", to: "#" },
         ],
       },
       {
-        title: "Elliot Wave Analysis",
+        title: "Users",
         items: [
-          {
-            title: "The Dow Theory",
-            to: "/thedowtheory",
-          },
-          {
-            title: "Charts & Chart Patterns",
-            to: "/chart",
-          },
-          {
-            title: "Trend & Trend Lines",
-            to: "/trendlines",
-          },
-          {
-            title: "Support & Resistance",
-            to: "/sandr",
-          },
+          { title: "Profile", to: "/profile" },
+          { title: "Password", to: "#" },
         ],
       },
     ],
   },
   {
     icon: <TrendingUpOutlined />,
-    title: "Options",
+    title: "Reporting",
+    items: [
+      {
+        title: "Trades",
+        to: "/reporting/trades",
+      },
+      {
+        title: "Positions",
+        to: "/reporting/position",
+      },
+    ],
+  },
+  {
+    icon: <TrendingUpOutlined />,
+    title: "Risks",
+    to: "/risks",
   },
   {
     icon: <DescriptionOutlined />,
-    title: "Blog",
+    title: "Market Data",
+    to: "/market_data",
+  },
+  {
+    icon: <TrendingUpOutlined />,
+    title: "Regulatory",
+    to: "/regulatory",
+  },
+  {
+    icon: <DescriptionOutlined />,
+    title: "Sales",
+    to: "/sales",
+  },
+  {
+    icon: <LocalLibraryOutlined />,
+    title: "Support",
+    items: [
+      {
+        title: "ECN",
+        items: [
+          {
+            title: "Trade Replay",
+            to: "/support/ecn/trade_replay",
+          },
+          {
+            title: "Health Check",
+            to: "/support/ecn/heath_check",
+          },
+        ],
+      },
+      {
+        title: "Logging",
+        to: "/support/logging",
+      },
+      {
+        title: "Control Center",
+        to: "/support/control_center",
+      },
+    ],
   },
 ];
