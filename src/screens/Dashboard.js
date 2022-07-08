@@ -12,9 +12,7 @@ import { TotalProfit } from "../components/dashboard/total-profit";
 
 const Dashboard = () => (
   <>
-    <Card
-      style={{ borderColor: "red", borderStyle: "solid", marginTop: "0.75rem" }}
-    >
+    <Card style={{ marginTop: "0.75rem" }}>
       <CardHeader title='Welcome to the administration' />
       <CardContent>
         This screen is fully customizable based on user choice

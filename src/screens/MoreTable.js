@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
+import { Box, Container, Grid } from "@mui/material";
 import { Resource } from "react-admin";
 
 import CommentList from "../list_components/CommentList";
@@ -60,10 +60,30 @@ export default function BasicTabs() {
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        <Resource name='comments' list={CommentList} />
+        <Box>
+          <Container maxWidth={false}>
+            <Grid container spacing={3}>
+              <Grid item lg={6} md={6} xl={6} xs={12}>
+                <Resource name='users' list={UserList} />
+              </Grid>
+              <Grid item lg={6} md={6} xl={6} xs={12}>
+                <Resource name='static' list={TestLongList} />
+              </Grid>
+            </Grid>
+            <Grid container spacing={3}>
+              <Grid item lg={6} md={6} xl={6} xs={12}>
+                <Resource name='users' list={UserList} />
+              </Grid>
+              <Grid item lg={6} md={6} xl={6} xs={12}>
+                <Resource name='static' list={TestLongList} />
+              </Grid>
+            </Grid>
+          </Container>
+        </Box>
       </TabPanel>
       <TabPanel value={value} index={1}>
         <Resource name='users' list={UserList} />
+        <Resource name='static' list={TestLongList} />
       </TabPanel>
       <TabPanel value={value} index={2}>
         <Resource name='static' list={TestLongList} />

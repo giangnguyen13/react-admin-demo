@@ -5,7 +5,7 @@ import EditActionButton from "../components/EditActionButton";
 const listFilters = [<TextInput source='q' label='Search' alwaysOn />];
 const TestLongList = () => {
   return (
-    <List filters={listFilters} title='My Custom Long List'>
+    <List filters={listFilters} title='My Custom Long List' perPage={5}>
       <Datagrid size='medium'>
         <EditActionButton />
         <TextField source='uuid' />

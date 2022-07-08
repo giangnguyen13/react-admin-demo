@@ -5,9 +5,10 @@ import { Title } from "react-admin";
 
 const Settings = () => (
   <Card>
-    <Title title='Setting' />
+    <Title title='Custom route' />
     <CardContent>
-      This screen is fully customizable based on user choice
+      Custom route, no data source, fully customizable page based on user
+      choice.
     </CardContent>
   </Card>
 );
