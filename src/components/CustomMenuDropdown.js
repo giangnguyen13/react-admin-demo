@@ -70,7 +70,6 @@ const MultiLevel = ({ item }) => {
         // primaryText={<MenuLabel title={item.title} open={open} />}
         primaryText={item.title}
         leftIcon={<MenuLabelIcon open={open} icon={item.icon} />}
-        rightIcon
         onClick={handleClick}
       />
       <Collapse in={open} timeout='auto' unmountOnExit>

@@ -24,7 +24,7 @@ const TestLongList = () => {
         <TextField source='offset' />
         <TextField source='multi' />
 
-        <TextField source='range.type' Label='Type Range' />
+        <TextField source='range.type' label='Type Range' />
 
         <TextField source='active' />
         <TextField source='export' />
